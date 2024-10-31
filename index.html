@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <!-- <link rel="shortcut icon" href="./images/122.webp" type="image/x-icon" /> -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+      <div
+        class="container py-4 d-flex justify-content-between align-items-center">
+        <div>
+          <a
+            href="/"
+            class="text-decoration-none d-flex justify-content-between align-items-center logo">
+            <img src="./images/logo.png" class="me-2" alt="" />
+            <div class="brand text-white">
+              <h1 class="fs-5 mb-0">Weather</h1>
+              <small class="fs-6 m-0">tagline goes here</small>
+            </div>
+          </a>
+        </div>
+        <div class="clock">
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#">Picture</a>
+            <a class="nav-link" href="#">Maps</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="search bg-opacity-10">
+      <div class="layer"></div>
+      <div class="container">
+        <h1 class="text-center text-dark fw-bold my-4 position-relative">
+          Search By Country
+        </h1>
+        <div class="form-group mx-auto mb-5">
+          <input
+            class="form-control search-input text-white py-3"
+            type="search"
+            placeholder="find your location..."
+            aria-label="Search" />
+          <button class="btn search-btn p-2" type="submit">Search</button>
+        </div>
+        <h2 class="small text-center fw-bold lg-screen position-relative">
+          <span class="day fs-3"></span> <span class="fs-4 time"> </span>
+        </h2>
+      </div>
+    </section>
+
+    <section class="data py-4">
+      <div class="container">
+        <div
+          class="row forecast-container rounded-4 overflow-hidden"
+          id="rowData"></div>
+      </div>
+    </section>
+    <!-- Scripts Links -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
